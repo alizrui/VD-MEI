@@ -14,9 +14,7 @@ def main(args):
                          & (db['CRASH DATE'].dt.month == 4)]
 
     # ordena por dia y mes (useless)
-    filtered_db.sort_values(by='CRASH DATE', inplace=True)
-
-    # print(filtered_db.head(100))
+    # filtered_db.sort_values(by='CRASH DATE', inplace=True)
 
     # print(db.dtypes)
     # print(db.keys())

@@ -1,44 +1,34 @@
 Starting preprocessing
-Unnamed: 0                         int64
-CRASH DATE                        object
-CRASH TIME                        object
-BOROUGH                           object
-ZIP CODE                         float64
-LATITUDE                         float64
-LONGITUDE                        float64
-LOCATION                          object
-ON STREET NAME                    object
-CROSS STREET NAME                 object
-OFF STREET NAME                   object
-NUMBER OF PERSONS INJURED        float64
-NUMBER OF PERSONS KILLED         float64
-NUMBER OF PEDESTRIANS INJURED      int64
-NUMBER OF PEDESTRIANS KILLED       int64
-NUMBER OF CYCLIST INJURED          int64
-NUMBER OF CYCLIST KILLED           int64
-NUMBER OF MOTORIST INJURED         int64
-NUMBER OF MOTORIST KILLED          int64
-CONTRIBUTING FACTOR VEHICLE 1     object
-CONTRIBUTING FACTOR VEHICLE 2     object
-CONTRIBUTING FACTOR VEHICLE 3     object
-CONTRIBUTING FACTOR VEHICLE 4     object
-CONTRIBUTING FACTOR VEHICLE 5     object
-COLLISION_ID                       int64
-VEHICLE TYPE CODE 1               object
-VEHICLE TYPE CODE 2               object
-VEHICLE TYPE CODE 3               object
-VEHICLE TYPE CODE 4               object
-VEHICLE TYPE CODE 5               object
-dtype: object
-Index(['Unnamed: 0', 'CRASH DATE', 'CRASH TIME', 'BOROUGH', 'ZIP CODE',
-       'LATITUDE', 'LONGITUDE', 'LOCATION', 'ON STREET NAME',
-       'CROSS STREET NAME', 'OFF STREET NAME', 'NUMBER OF PERSONS INJURED',
-       'NUMBER OF PERSONS KILLED', 'NUMBER OF PEDESTRIANS INJURED',
-       'NUMBER OF PEDESTRIANS KILLED', 'NUMBER OF CYCLIST INJURED',
-       'NUMBER OF CYCLIST KILLED', 'NUMBER OF MOTORIST INJURED',
-       'NUMBER OF MOTORIST KILLED', 'CONTRIBUTING FACTOR VEHICLE 1',
-       'CONTRIBUTING FACTOR VEHICLE 2', 'CONTRIBUTING FACTOR VEHICLE 3',
-       'CONTRIBUTING FACTOR VEHICLE 4', 'CONTRIBUTING FACTOR VEHICLE 5',
-       'COLLISION_ID', 'VEHICLE TYPE CODE 1', 'VEHICLE TYPE CODE 2',
-       'VEHICLE TYPE CODE 3', 'VEHICLE TYPE CODE 4', 'VEHICLE TYPE CODE 5'],
-      dtype='object')
+COLUMN_NAME                       TYPE    USEFUL?
+----------------------------------------------------
+Unnamed: 0                         int64  YES
+CRASH DATE                        object  YES
+CRASH TIME                        object  YES
+BOROUGH                           object  YES
+ZIP CODE                         float64  NO
+LATITUDE                         float64  YES
+LONGITUDE                        float64  YES
+LOCATION                          object  NO
+ON STREET NAME                    object  NO
+CROSS STREET NAME                 object  NO
+OFF STREET NAME                   object  NO
+NUMBER OF PERSONS INJURED        float64  YES
+NUMBER OF PERSONS KILLED         float64  YES
+NUMBER OF PEDESTRIANS INJURED      int64  YES
+NUMBER OF PEDESTRIANS KILLED       int64  YES
+NUMBER OF CYCLIST INJURED          int64  YES
+NUMBER OF CYCLIST KILLED           int64  YES
+NUMBER OF MOTORIST INJURED         int64  YES
+NUMBER OF MOTORIST KILLED          int64  YES
+CONTRIBUTING FACTOR VEHICLE 1     object  YES
+CONTRIBUTING FACTOR VEHICLE 2     object  YES
+CONTRIBUTING FACTOR VEHICLE 3     object  YES
+CONTRIBUTING FACTOR VEHICLE 4     object  YES
+CONTRIBUTING FACTOR VEHICLE 5     object  YES
+COLLISION_ID                       int64  NO
+VEHICLE TYPE CODE 1               object  NO
+VEHICLE TYPE CODE 2               object  NO
+VEHICLE TYPE CODE 3               object  NO
+VEHICLE TYPE CODE 4               object  NO
+VEHICLE TYPE CODE 5               object  NO
+

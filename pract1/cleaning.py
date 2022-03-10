@@ -21,23 +21,31 @@ def main(args):
     if(filtered_db['COLLISION_ID'].duplicated()[::-1].idxmax() != 29704):
          print("There are repeated values")
 
-    # maximo de heridos
-    print(filtered_db['NUMBER OF PERSONS INJURED'].max())
+    # valores de BOROUGH (barrios)
+    print(filtered_db.groupby(['BOROUGH']).count())
 
-    # maximo de muertos
-    print(filtered_db['NUMBER OF PERSONS KILLED'].max())
+    # máximo y mínimo de heridos
+    print("Max injured: {} ".format(filtered_db['NUMBER OF PERSONS INJURED'].max()))
+    print("Min injured: {} ".format(filtered_db['NUMBER OF PERSONS INJURED'].min()))
+
+    # máximo y mínimo de muertos
+    print("Max killed: {} ".format(filtered_db['NUMBER OF PERSONS KILLED'].max()))
+    print("Min killed: {} ".format(filtered_db['NUMBER OF PERSONS KILLED'].min()))
+
+    # valores de CONTRIBUTING FACTOR
+    print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 1']).count())
+    print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 2']).count())
+    print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 3']).count())
+    print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 4']).count())
+    print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 5']).count())
 
     # print(filtered_db.count())
-
-
-    #print(db.dtypes)
-    #print(db.keys())
+    # print(db.dtypes)
+    # print(db.keys())
     # print(db.index)
     # print(db.size)
     
-    # filtered_db.to_csv("cleaned_data.csv")
-
-
+    #filtered_db.to_csv("cleaned_data.csv")
 
     return 0
 

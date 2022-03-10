@@ -22,7 +22,7 @@ def main(args):
     # print(db.size)
     
 
-    filtered_db.to_csv("Iznardo_raw_data.csv")
+    filtered_db.to_csv("raw_data.csv")
     return 0
 
 if __name__=="__main__":

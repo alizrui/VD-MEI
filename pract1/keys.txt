@@ -2,8 +2,8 @@ Starting preprocessing
 COLUMN_NAME                       TYPE    USEFUL?
 ----------------------------------------------------
 Unnamed: 0                         int64  YES
-CRASH DATE                        object  YES
-CRASH TIME                        object  YES
+CRASH DATE                        object  YES (NO)
+CRASH TIME                        object  YES (NO)
 BOROUGH                           object  YES
 ZIP CODE                         float64  NO
 LATITUDE                         float64  YES
@@ -31,4 +31,6 @@ VEHICLE TYPE CODE 2               object  NO
 VEHICLE TYPE CODE 3               object  NO
 VEHICLE TYPE CODE 4               object  NO
 VEHICLE TYPE CODE 5               object  NO
+
+CRASH DATETIME                    object  YES
 

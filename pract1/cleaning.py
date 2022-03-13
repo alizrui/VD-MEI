@@ -17,6 +17,16 @@ def main(args):
                             'VEHICLE TYPE CODE 4',
                             'VEHICLE TYPE CODE 5'])
 
+    # concatena columnas CRASH DATE y CRASH TIME
+    filtered_db['CRASH DATETIME'] = filtered_db['CRASH DATE'] + " " +  filtered_db['CRASH TIME']
+
+    # elimina las columnas CRASH DATE y CRASH TIME
+    filtered_db = filtered_db.drop(columns=['CRASH DATE', 'CRASH TIME'])
+
+    # ordena por DATETIME
+    filtered_db['CRASH DATETIME'] = pd.to_datetime(filtered_db['CRASH DATETIME'])
+    filtered_db.sort_values(by='CRASH DATETIME', inplace=True)
+
     # comprueba si hay IDs repetidos
     if(filtered_db['COLLISION_ID'].duplicated()[::-1].idxmax() != 29704):
          print("There are repeated values")
@@ -39,13 +49,14 @@ def main(args):
     print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 4']).count())
     print(filtered_db.groupby(['CONTRIBUTING FACTOR VEHICLE 5']).count())
 
+    print(filtered_db.head(10))
     # print(filtered_db.count())
     # print(db.dtypes)
     # print(db.keys())
     # print(db.index)
     # print(db.size)
     
-    #filtered_db.to_csv("cleaned_data.csv")
+    filtered_db.to_csv("cleaned_data.csv")
 
     return 0
 

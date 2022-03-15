@@ -20,8 +20,11 @@ def main(args):
     # concatena columnas CRASH DATE y CRASH TIME
     filtered_db['CRASH DATETIME'] = filtered_db['CRASH DATE'] + " " +  filtered_db['CRASH TIME']
 
+    # crea columnas auxiliares YEAR and DAY
+    filtered_db['YEAR'] = pd.to_datetime(filtered_db['CRASH DATE']).dt.year
+    filtered_db['DAY'] = pd.to_datetime(filtered_db['CRASH DATE']).dt.day
     # elimina las columnas CRASH DATE y CRASH TIME
-    filtered_db = filtered_db.drop(columns=['CRASH DATE', 'CRASH TIME'])
+    # filtered_db = filtered_db.drop(columns=['CRASH DATE', 'CRASH TIME'])
 
     # ordena por DATETIME
     filtered_db['CRASH DATETIME'] = pd.to_datetime(filtered_db['CRASH DATETIME'])

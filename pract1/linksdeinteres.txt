@@ -1,0 +1,2 @@
+colores: https://vega.github.io/vega/docs/schemes/#reference
+vd: file:///E:/UPC/MEI-UPC/VD/labs/VD-MEI/others/DataVisualizationAltair.pdf

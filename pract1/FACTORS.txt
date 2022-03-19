@@ -1,0 +1,77 @@
+[  
+ 1
+ 1
+ 6
+ 1
+ 1
+ 1
+ 1
+ 1
+ 8
+ 6
+ 1
+ 4
+ 2
+ 1
+4
+
+ 4 
+ 1
+ 7
+ 8
+, 
+ 
+ 2
+ 3
+
+ 2
+ 6
+nan, 
+ 3
+ 6
+ 7
+ 1
+ 8
+ 2
+ 7
+ 2 
+ 3
+ 6
+ 3
+ 2
+ 7
+ 6
+ 2
+ 2
+ 8
+ 6
+ 
+ 3 
+ 3
+ 2
+]
+
+
+GENERAL FACTORS:
+1 - DANGEROUS DRIVING - 
+    ['Failure to Keep Right', 'Driverless/Runaway Vehicle',  'Following Too Closely', 'Passing Too Closely', 'Failure to Yield Right-of-Way', 'Turning Improperly', 'Unsafe Speed', 'Passing or Lane Usage Improper', 'Traffic Control Disregarded', 'Aggressive Driving/Road Rage', 'Unsafe Lane Changing',]
+2 - DRIVER DISTRACTION - 
+    ['Other Electronic Device', 'Eating or Drinking', 'Texting', 'Cell Phone (hand-Held)', 'Using On Board Navigation Device', 'Cell Phone (hands-free)', 'Passenger Distraction','Driver Inattention/Distraction', 'Outside Car Distraction', ]
+3 - DRIVER MEDICAL ISSUE - 
+    ['Shoulders Defective/Improper', 'Prescription Medication', 'Physical Disability', 'Fatigued/Drowsy', 'Lost Consciousness', 'Illnes', 'Fell Asleep']
+4 - DRIVER ON ALCOHOL OR DRUGS - 
+    ['Drugs (illegal)', 'Alcohol Involvement',]
+5 - DRIVER INEXPERIENCE - 
+    ['Driver Inexperience']
+6 - CAR MECHANICAL PROBLEMS - 
+    ['Vehicle Vandalism', 'Headlights Defective', 'Windshield Inadequate', 'Tow Hitch Defective', 'Accelerator Defective', 'Tire Failure/Inadequate', 'Brakes Defective', 'Steering Failure', 'Oversized Vehicle']
+7 - STREET AND ROAD PROBLEMS - 
+    ['Traffic Control Device Improper/Non-Working', 'Lane Marking Improper/Inadequate','Obstruction/Debris', 'Pavement Slippery', 'Pavement Defective',]
+8 - VISIBILITY PROBLEMS - 
+    ['Tinted Windows', 'Glare', 'View Obstructed/Limited', 'Other Lighting Defects',]
+9 - OTHER VEHICLE -
+    ['Other Vehicular', 'Reaction to Uninvolved Vehicle', ]
+10 - EXTERNAL HUMAN OR ANIMAL FACTOR - 
+    ['Pedestrian/Bicyclist/Other Pedestrian Error/Confusion', 'Animals Action',]
+11 - UNSPECIFIED - 
+    ['Unspecified']

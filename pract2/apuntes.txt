@@ -1,0 +1,5 @@
+interacción: algunos charts deben modificar otros charts -> cross selection()
+-todos que sean interactivos, solucionar problemas con interacción
+-todos tienen que tener uno o más métodos de interacción
+-no me pongais solo un diagrama de barras y que la unica interaccion sea un radio button y highlightee algo, NO
+-
